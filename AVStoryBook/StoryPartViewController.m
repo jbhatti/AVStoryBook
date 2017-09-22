@@ -10,7 +10,7 @@
 #import "StoryPartViewController.h"
 @import AVFoundation;
 
-@interface StoryPartViewController ()
+@interface StoryPartViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (nonatomic,strong) NSURL *audioFileURL;
@@ -74,6 +74,33 @@
     [self.player play];
 }
 
+- (IBAction)pickImage:(id)sender {
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    } else {
+        picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    }
+    
+    NSArray *mediaTypes = [UIImagePickerController availableMediaTypesForSourceType:picker.sourceType];
+    NSLog(@"Source types: %@", mediaTypes);
+    picker.mediaTypes = mediaTypes;
+    
+    picker.delegate = self;
+    
+    [self presentViewController:picker animated:YES completion:^{
+        
+    }];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
+{
+    NSLog(@"media info: %@", info);
+    UIImage *image = info[UIImagePickerControllerOriginalImage];
+    self.imageView.image = image;
+    [self dismissViewControllerAnimated:YES completion:^{    }];
+}
 
 
 
