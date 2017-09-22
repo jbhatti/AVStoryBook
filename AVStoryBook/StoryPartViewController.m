@@ -12,6 +12,7 @@
 
 @interface StoryPartViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (nonatomic,strong) NSURL *audioFileURL;
 @property (nonatomic,strong) AVAudioRecorder *recorder;
 @property (nonatomic,strong) AVAudioPlayer *player;
@@ -54,6 +55,27 @@
     }
     [self.recorder record];
 }
+
+- (IBAction)playAudio:(UITapGestureRecognizer *)sender {
+    if ([self.player isPlaying]) {
+        [self.player stop];
+        return;
+    }
+    
+    NSError *err = nil;
+    self.player = [[AVAudioPlayer alloc]
+                   initWithContentsOfURL:self.audioFileURL
+                   error:&err];
+    if (err != nil) {
+        NSLog(@"Error creating player: %@", err.localizedDescription);
+        abort();
+    }
+    
+    [self.player play];
+}
+
+
+
 
 
 @end
