@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		88CE83E41F759142002EF222 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CE83E31F759142002EF222 /* main.m */; };
 		88CE83E71F759142002EF222 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CE83E61F759142002EF222 /* AppDelegate.m */; };
-		88CE83EA1F759142002EF222 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CE83E91F759142002EF222 /* ViewController.m */; };
 		88CE83ED1F759142002EF222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88CE83EB1F759142002EF222 /* Main.storyboard */; };
 		88CE83EF1F759142002EF222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88CE83EE1F759142002EF222 /* Assets.xcassets */; };
 		88CE83F21F759142002EF222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88CE83F01F759142002EF222 /* LaunchScreen.storyboard */; };
+		88CE83FE1F75932D002EF222 /* StoryPartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CE83FD1F75932D002EF222 /* StoryPartViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +20,12 @@
 		88CE83E31F759142002EF222 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		88CE83E51F759142002EF222 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		88CE83E61F759142002EF222 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		88CE83E81F759142002EF222 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		88CE83E91F759142002EF222 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		88CE83EC1F759142002EF222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88CE83EE1F759142002EF222 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88CE83F11F759142002EF222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88CE83F31F759142002EF222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88CE83FC1F75932D002EF222 /* StoryPartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryPartViewController.h; sourceTree = "<group>"; };
+		88CE83FD1F75932D002EF222 /* StoryPartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryPartViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,13 +60,13 @@
 			children = (
 				88CE83E51F759142002EF222 /* AppDelegate.h */,
 				88CE83E61F759142002EF222 /* AppDelegate.m */,
-				88CE83E81F759142002EF222 /* ViewController.h */,
-				88CE83E91F759142002EF222 /* ViewController.m */,
 				88CE83EB1F759142002EF222 /* Main.storyboard */,
 				88CE83EE1F759142002EF222 /* Assets.xcassets */,
 				88CE83F01F759142002EF222 /* LaunchScreen.storyboard */,
 				88CE83F31F759142002EF222 /* Info.plist */,
 				88CE83E21F759142002EF222 /* Supporting Files */,
+				88CE83FC1F75932D002EF222 /* StoryPartViewController.h */,
+				88CE83FD1F75932D002EF222 /* StoryPartViewController.m */,
 			);
 			path = AVStoryBook;
 			sourceTree = "<group>";
@@ -150,9 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88CE83EA1F759142002EF222 /* ViewController.m in Sources */,
 				88CE83E71F759142002EF222 /* AppDelegate.m in Sources */,
 				88CE83E41F759142002EF222 /* main.m in Sources */,
+				88CE83FE1F75932D002EF222 /* StoryPartViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
