@@ -9,6 +9,7 @@
 #import "StoryPartPageViewController.h"
 
 @interface StoryPartPageViewController () <UIPageViewControllerDelegate, UIPageViewControllerDataSource>
+@property (nonatomic) NSArray* myPhotos;
 
 @end
 
@@ -19,12 +20,25 @@
     self.dataSource = self;
     self.delegate = self;
     // Do any additional setup after loading the view.
+    self.myPhotos = @[@"Page1", @"Page2", @"Page3", @"Page4", @"Page5"];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (nullable UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
+    return nil;
+}
+
+
+- (nullable UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
+    return nil;
+}
+
+
 
 /*
 #pragma mark - Navigation
