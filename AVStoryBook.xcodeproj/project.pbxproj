@@ -14,6 +14,7 @@
 		88CE83F21F759142002EF222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88CE83F01F759142002EF222 /* LaunchScreen.storyboard */; };
 		88CE83FE1F75932D002EF222 /* StoryPartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CE83FD1F75932D002EF222 /* StoryPartViewController.m */; };
 		88CE84011F75A093002EF222 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CE84001F75A093002EF222 /* Model.m */; };
+		88CE84041F75B34E002EF222 /* StoryPartPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CE84031F75B34E002EF222 /* StoryPartPageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		88CE83FD1F75932D002EF222 /* StoryPartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryPartViewController.m; sourceTree = "<group>"; };
 		88CE83FF1F75A093002EF222 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		88CE84001F75A093002EF222 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		88CE84021F75B34E002EF222 /* StoryPartPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryPartPageViewController.h; sourceTree = "<group>"; };
+		88CE84031F75B34E002EF222 /* StoryPartPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryPartPageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,8 @@
 				88CE83E51F759142002EF222 /* AppDelegate.h */,
 				88CE83E61F759142002EF222 /* AppDelegate.m */,
 				88CE83EB1F759142002EF222 /* Main.storyboard */,
+				88CE84021F75B34E002EF222 /* StoryPartPageViewController.h */,
+				88CE84031F75B34E002EF222 /* StoryPartPageViewController.m */,
 				88CE83EE1F759142002EF222 /* Assets.xcassets */,
 				88CE83F01F759142002EF222 /* LaunchScreen.storyboard */,
 				88CE83F31F759142002EF222 /* Info.plist */,
@@ -159,6 +164,7 @@
 				88CE83E41F759142002EF222 /* main.m in Sources */,
 				88CE83FE1F75932D002EF222 /* StoryPartViewController.m in Sources */,
 				88CE84011F75A093002EF222 /* Model.m in Sources */,
+				88CE84041F75B34E002EF222 /* StoryPartPageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
