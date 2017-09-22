@@ -7,6 +7,7 @@
 //
 
 #import "StoryPartPageViewController.h"
+#import "StoryPartViewController.h"
 
 @interface StoryPartPageViewController () <UIPageViewControllerDelegate, UIPageViewControllerDataSource>
 @property (nonatomic) NSArray* myPhotos;
@@ -21,6 +22,9 @@
     self.delegate = self;
     // Do any additional setup after loading the view.
     self.myPhotos = @[@"Page1", @"Page2", @"Page3", @"Page4", @"Page5"];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+    StoryPartViewController *storyPartViewController = [storyboard instantiateViewControllerWithIdentifier:@"StoryPartViewController"];
     
 }
 

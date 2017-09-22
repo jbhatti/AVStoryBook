@@ -10,7 +10,9 @@
 
 @interface Model : NSObject
 
-@property (nonatomic) UIImage* image;
-//@property
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (nonatomic,strong) NSURL *audioFileURL;
+@property (nonatomic,strong) AVAudioRecorder *recorder;
+@property (nonatomic,strong) AVAudioPlayer *player;
 
 @end

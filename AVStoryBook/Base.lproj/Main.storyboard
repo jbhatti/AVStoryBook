@@ -20,7 +20,7 @@
         <!--Story Part View Controller-->
         <scene sceneID="x6a-Eh-4Ox">
             <objects>
-                <viewController id="P9D-Tm-2GI" customClass="StoryPartViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StoryPartViewController" id="P9D-Tm-2GI" customClass="StoryPartViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xvr-53-Wey"/>
                         <viewControllerLayoutGuide type="bottom" id="uCy-4Z-zef"/>
